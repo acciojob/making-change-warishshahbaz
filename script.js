@@ -1,12 +1,10 @@
 const makeChange = (c) => {
-  let = {
-	  quater:25,
-	  dime:10,
-	  nickel:5,
-	  penny:1,
-  }
-	let q = Math.floor(c/quater);
-	let remainingQuater = quaterAmount % quater;
+     const quarter = 25;
+    const dime = 10;
+    const nickel = 5;
+    const penny = 1;
+	let q = Math.floor(c/quarter);
+	let remainingQuater = c % quarter;
 	let d = Math.floor(remainingQuater/dime);
 	let remainingDime = remainingQuater % dime;
 	let n = Math.floor(remainingDime /nickel);
